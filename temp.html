@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEMPERATURE CONVERTER</title>
+  <link rel="stylesheet" href="temp.css">
+  <script>
+    function temperatureConverter(valNum) {
+valNum = parseFloat(valNum);
+document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8;
+document.getElementById("outputKelvin").innerHTML =( (valNum-32) / 1.8)+273.15;
+}
+
+    
+</script>
+</head>
+<body>
+  <h1 class="heading">Fahrenheit converter</h1> 
+  <p><div class="container">
+    <label>Fahrenheit</label>
+    <input id="inputFahrenheit1" type="number" placeholder="Fahrenheit"
+    oninput="temperatureConverter(this.value)"
+    onchange="temperatureConverter(this.value)">
+  </p>
+  <p>Celsius: <span id="outputCelsius"></span></p>
+  
+  <br>
+  <p>Kelvin: <span id="outputKelvin"></span></p>
+  
+  
+</div>
+     
+    
+</body>
+</html>
+
+
+
+
+    
+   
+    
+   
+    
+
+    
+     
+    
+   
+</body>
+</html>
